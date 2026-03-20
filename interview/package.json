@@ -1,11 +1,11 @@
 {
-  "name": "sheet_1",
+  "name": "interview",
   "version": "1.0.0",
-  "main": "index.js",
-  "type":"module",
+  "main": "Q1.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "node"
+    "dev": "node Q1.js"
   },
   "keywords": [],
   "author": "",
