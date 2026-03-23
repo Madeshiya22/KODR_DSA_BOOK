@@ -1,4 +1,4 @@
-//      Accept a number and print its reverse
+//Accept a number and print its reverse
 import promptSync from "prompt-sync";
 const prompt = promptSync();
 let num = Number(prompt("Enter a number: "));
