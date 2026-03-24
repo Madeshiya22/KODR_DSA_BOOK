@@ -153,3 +153,41 @@
 
  
 
+// print inverted right angle triangle pattern
+// import promptSync from 'prompt-sync';
+// const prompt = promptSync();
+
+// let n = Number(prompt('Enter the number of rows: '));
+// for(let i =n; i>=1; i--){
+//     for(let j=1; j<=i; j++){
+//         process.stdout.write("* ");
+//     }
+//     console.log("\n");
+// }
+// print right angle triangle pattern mirror image
+// import promptSync from 'prompt-sync';
+// const prompt = promptSync();
+
+// let n = Number(prompt('Enter the number of rows: '));
+// for(let i =1; i<=n; i++){
+//     for(let j=1; j<=n-i; j++){
+//         process.stdout.write("  ");
+//     }
+//     for(let k=1; k<=i; k++){
+//         process.stdout.write("* ");
+//     }
+//     console.log("\n");
+// }
+
+// print X pattern
+import promptSync from 'prompt-sync';
+const prompt = promptSync();
+
+let n = Number(prompt('Enter the number of rows: '));
+for(let i =1; i<=n; i++){
+    for(let j =1; j<=n; j++){
+        if(i===j || i+j === n+1) process.stdout.write("* ");
+        else process.stdout.write("  ");
+    }
+    console.log("\n");
+}
