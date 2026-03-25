@@ -227,3 +227,69 @@
 // }
 
 // console.log(" the greatest value is: " + max);
+
+//Find the second greatest element (Ex: {2, 96, 69, 77, 145, 20} = Second greatest element = 96)
+// let arr = [2, 96, 69, 77, 145, 20];
+// let max = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//   }
+// }
+
+// let secondMax = -Infinity;  
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > secondMax && arr[i] < max) {
+//     secondMax = arr[i];
+//   }
+// }
+
+// console.log(" the second greatest value is: " + secondMax);
+
+// let arr = [2, 96, 69, 77, 145, 20];
+// let max = Math.max(arr[0], arr[1]);  // or we can also find max by using loop as we did in previous question
+// let secondMax = Math.min(arr[0], arr[1]); // 
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//      secondMax = max;
+//     max = arr[i];
+//   }
+//   else if(arr[i] > secondMax && arr[i] !== max){
+//     secondMax = arr[i];
+//   }
+
+// }
+// console.log(" the second greatest value is: " + secondMax);
+
+
+//Take n integer inputs from user and store them in an array. Now, copy all the elements into another array in reverse order and print it.let prompt = require('prompt-sync')();
+    let prompt = require('prompt-sync')();
+    // let n = Number(prompt('Enter the size of the array: '));
+    // let arr = new Array(n);
+    // for (let i = 0; i < n; i++) {
+    //     arr[i] = Number(prompt(`Enter element ${i + 1}: `));
+    // }
+    // let temp = new Array(n);
+    // let i = arr.length - 1;
+    // for (let j = 0; j < arr.length; j++) {
+    //     temp[j] = arr[i];
+    //     i--;
+    // }
+    // console.log("original Array")
+    // console.log(arr);
+    // console.log("Reverse array")
+    // console.log(temp)
+
+//Array Reverse Without Using Extra space
+let arr = [12,56,78,34,67];
+let i =0;
+let j = arr.length-1;
+while(i<j){
+    let temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+    i++;
+    j--;
+}
+console.log("reversed array");
+console.log(arr);
