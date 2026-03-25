@@ -66,7 +66,6 @@
 
 //17.Accept a day number between 1-7 and print the corresponding day name.
 
-
 // do {
 // dayNumber = Number(prompt("Enter a number between 1 to 7:"));
 // } while (isNaN(dayNumber) || dayNumber < 1 || dayNumber > 7);
@@ -108,7 +107,7 @@
 
 //19.Accept a year and check if it a leap year or not (google to find out what's a leap year)
 
- // let year = Number(prompt('Enter a year:'));
+// let year = Number(prompt('Enter a year:'));
 
 // if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
 //     console.log(`${year} is a leap year.`);
@@ -117,7 +116,7 @@
 // }
 
 // In short cut method
-// console.log((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0) ? `${year} is a leap year.` : `${year} is not a leap year.`); 
+// console.log((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0) ? `${year} is a leap year.` : `${year} is not a leap year.`);
 
 //20. Shop discount
 
@@ -129,7 +128,7 @@
 
 // console.log(finalAmount);
 
-// if price is greater than then 500 discount is 10% and if price is greater than 1000 then discount is 20% 
+// if price is greater than then 500 discount is 10% and if price is greater than 1000 then discount is 20%
 
 // let billAmount = Number(prompt('Enter the total bill amount:'));
 // let discountPercentage;
@@ -137,8 +136,6 @@
 // let discountAmount = (billAmount * discountPercentage) / 100;
 // let finalAmount = billAmount - discountAmount;
 // console.log(finalAmount)
-
-
 
 //21. Bijli Bill
 
@@ -149,9 +146,7 @@
 // ElectUnit > 100 && ElectUnit <= 200 ? billAmount = (100 * 5) + ((ElectUnit - 100) * 7) :
 // billAmount = (100 * 5) + (100 * 7) + ((ElectUnit - 200) * 10));
 
-// console.log(`The total bill amount is: ${billAmount}`); 
-
- 
+// console.log(`The total bill amount is: ${billAmount}`);
 
 // print inverted right angle triangle pattern
 // import promptSync from 'prompt-sync';
@@ -180,14 +175,55 @@
 // }
 
 // print X pattern
-import promptSync from 'prompt-sync';
-const prompt = promptSync();
 
-let n = Number(prompt('Enter the number of rows: '));
-for(let i =1; i<=n; i++){
-    for(let j =1; j<=n; j++){
-        if(i===j || i+j === n+1) process.stdout.write("* ");
-        else process.stdout.write("  ");
-    }
-    console.log("\n");
-}
+// import promptSync from 'prompt-sync';
+// const prompt = promptSync();
+
+// let n = Number(prompt('Enter the number of rows: '));
+// for(let i =1; i<=n; i++){
+//     for(let j =1; j<=n; j++){
+//         if(i===j || i+j === n+1) process.stdout.write("* ");
+//         else process.stdout.write("  ");
+//     }
+//     console.log("\n");
+// }
+
+// print triangle pattern inverted mirror image
+// import promptSync from 'prompt-sync';
+// const prompt = promptSync();
+
+// let n = Number(prompt('Enter the number of rows: '));
+// for(let i =n; i>=1; i--){
+//     for(let j=1; j<=n-i; j++){
+//         process.stdout.write("  ");
+//     }
+//     for(let k=1; k<=i; k++){
+//         process.stdout.write("* ");
+//     }
+//     console.log("\n");
+// }
+
+// //Accept size n from user and create an n size array then take n inputs into it and finally print the sum & average of all elements.
+// let prompt = require('prompt-sync')();
+// let n = Number(prompt('Enter the size of the array: '));
+// let arr = [];
+// let sum = 0;
+// for (let i = 0; i < n; i++) {
+//     arr[i] = Number(prompt(`Enter element ${i + 1}: `)); // or arr.length bhi le sakte hai
+//     sum += arr[i];
+// }
+// let average = sum / n;
+// console.log(`Sum: ${sum}`);
+// console.log(`Average: ${average}`);
+
+// Find the greatest element (Ex: {2, 96, 69, 77, 145, 20} = Max element = 145 found at 4 index)
+
+// let arr = [2, 96, 69, 77, 145, 20];
+// let max = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//   }
+// }
+
+// console.log(" the greatest value is: " + max);
