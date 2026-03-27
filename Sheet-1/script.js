@@ -281,15 +281,51 @@
     // console.log(temp)
 
 //Array Reverse Without Using Extra space
-let arr = [12,56,78,34,67];
-let i =0;
-let j = arr.length-1;
-while(i<j){
-    let temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
-    i++;
-    j--;
+// let arr = [12,56,78,34,67];
+// let i =0;
+// let j = arr.length-1;
+// while(i<j){
+//     let temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+//     i++;
+//     j--;
+// }
+// console.log("reversed array");
+// console.log(arr);
+
+// sunarray target 12 
+// let arr = [1,2,3,7,5];
+// let target = 12;
+// let count = 0;  
+// for(let i=0; i<arr.length; i++){
+//     let sum = 0;
+//     for(let j = i; j<arr.length; j++){
+//         sum += arr[j];
+//         if(sum === target){
+//             count++
+//         }
+//     }
+    
+// }
+// console.log(count)
+
+//Binary Search. If element found print the index, else -1
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let target = 7;
+let left = 0;
+let right = arr.length - 1;
+let foundIndex = -1;
+while (left <= right) {
+    let mid = Math.floor((left + right) / 2);
+    if (arr[mid] === target) {
+        foundIndex = mid;
+        break;
+    } else if (arr[mid] < target) {
+        left = mid + 1;
+    } else {
+        right = mid - 1;
+
+    }
 }
-console.log("reversed array");
-console.log(arr);
+console.log(foundIndex)
