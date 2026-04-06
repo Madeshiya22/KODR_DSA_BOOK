@@ -263,7 +263,7 @@
 
 
 //Take n integer inputs from user and store them in an array. Now, copy all the elements into another array in reverse order and print it.let prompt = require('prompt-sync')();
-    let prompt = require('prompt-sync')();
+    // let prompt = require('prompt-sync')();
     // let n = Number(prompt('Enter the size of the array: '));
     // let arr = new Array(n);
     // for (let i = 0; i < n; i++) {
@@ -311,21 +311,21 @@
 // console.log(count)
 
 //Binary Search. If element found print the index, else -1
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let target = 7;
-let left = 0;
-let right = arr.length - 1;
-let foundIndex = -1;
-while (left <= right) {
-    let mid = Math.floor((left + right) / 2);
-    if (arr[mid] === target) {
-        foundIndex = mid;
-        break;
-    } else if (arr[mid] < target) {
-        left = mid + 1;
-    } else {
-        right = mid - 1;
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let target = 7;
+// let left = 0;
+// let right = arr.length - 1;
+// let foundIndex = -1;
+// while (left <= right) {
+//     let mid = Math.floor((left + right) / 2);
+//     if (arr[mid] === target) {
+//         foundIndex = mid;
+//         break;
+//     } else if (arr[mid] < target) {
+//         left = mid + 1;
+//     } else {
+//         right = mid - 1;
 
-    }
-}
-console.log(foundIndex)
+//     }
+// }
+// console.log(foundIndex)
