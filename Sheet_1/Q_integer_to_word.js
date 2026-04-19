@@ -1,4 +1,4 @@
-// 🔹 Global variables (bahar declare)
+// 🔹 Global mappings
 const under_20 = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven",
     "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen",
     "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"];
@@ -6,14 +6,15 @@ const under_20 = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven",
 const tens = ["", "", "Twenty", "Thirty", "Forty", "Fifty",
     "Sixty", "Seventy", "Eighty", "Ninety"];
 
+// 🔹 Indian units
 const units = [
-    [1e9, "Billion"],
-    [1e6, "Million"],
+    [1e7, "Crore"],
+    [1e5, "Lakh"],
     [1e3, "Thousand"],
     [1, ""]
 ];
 
-// 🔹 Single helper function (0–999)
+// 🔹 Helper (0–999)
 function helper(n) {
     if (n === 0) return "";
 
@@ -28,7 +29,7 @@ function helper(n) {
         (n % 100 !== 0 ? " " + helper(n % 100) : "");
 }
 
-// 🔹 Main function (while loop use kiya)
+// 🔹 Main function (while loop)
 function numberToWords(num) {
     if (num === 0) return "Zero";
 
@@ -53,4 +54,4 @@ function numberToWords(num) {
 
     return result.trim();
 }
-console.log(numberToWords(165))
+console.log(numberToWords(1650000))
