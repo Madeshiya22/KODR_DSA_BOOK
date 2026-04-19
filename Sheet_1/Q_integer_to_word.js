@@ -54,4 +54,4 @@ function numberToWords(num) {
 
     return result.trim();
 }
-console.log(numberToWords(1650000))
+console.log(numberToWords(165000))
