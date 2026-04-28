@@ -1,20 +1,20 @@
 //Find the second greatest element (Ex: {2, 96, 69, 77, 145, 20} = Second greatest element = 96)
-let arr = [];
-let max = arr[0];
-for (let i = 0; i < arr.length; i++) {
-  if (arr[i] > max) {
-    max = arr[i];
-  }
-}
+// let arr = [2,4,5,6,7];
+// let max = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//   }
+// }
 
-let secondMax = -Infinity;  
-for (let i = 0; i < arr.length; i++) {
-  if (arr[i] > secondMax && arr[i] < max) {
-    secondMax = arr[i];
-  }
-}
+// let secondMax = -Infinity;  
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > secondMax && arr[i] < max) {
+//     secondMax = arr[i];
+//   }
+// }
 
-console.log(" the second greatest value is: " + secondMax);
+// console.log(" the second greatest value is: " + secondMax);
 
 // let arr = [2, 96, 69, 77, 145, 20];
 // let max = Math.max(arr[0], arr[1]); 
@@ -29,3 +29,20 @@ console.log(" the second greatest value is: " + secondMax);
 //   }
 // }
 // console.log("second greatest value is: " +` ${secondMax}`)
+
+let arr = [2, 96, 69, 77, 145, 20];
+
+let max = -Infinity;
+let secondMax = -Infinity;
+
+for (let i = 0; i < arr.length; i++) {
+  if(arr[i]>max){
+    secondMax = max;
+    max = arr[i];
+  }
+  else if(arr[i]>secondMax && arr[i]<max){
+    secondMax = arr[i];
+  }
+}
+console.log(max)
+console.log(secondMax)

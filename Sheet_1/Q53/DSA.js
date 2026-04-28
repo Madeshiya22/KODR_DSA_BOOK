@@ -1,6 +1,6 @@
 // V pattern
-import promptSync from "prompt-sync";
-const prompt = promptSync();
+// import promptSync from "prompt-sync";
+// const prompt = promptSync();
 // let n = Number(prompt("Enter the number of rows: "));
 // for (let i = 1; i <= n; i++) {
 //   for (let j = 1; j <= n+4 ; j++) {
@@ -10,7 +10,7 @@ const prompt = promptSync();
 //   console.log("\n");
 // }
 
-let n = Number(prompt("Enter the number of rows: "));
+let n =4;
 for (let i = 1; i <= n; i++) {
   for (let j = 1; j <= 2*n - 1; j++) {
     if (i == j || i + j === 2*n) process.stdout.write("* ");
